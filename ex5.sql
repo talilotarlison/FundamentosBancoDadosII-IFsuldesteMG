@@ -19,7 +19,8 @@ CREATE TABLE clientes (
 ALTER TABLE clientes
 ADD dataUltCompra DATE NOT NULL;
 
-
+-- mostrar tabelas
+SHOW TABLES;
 -- inserir ultima compra
 
 -- -- insert  valores
