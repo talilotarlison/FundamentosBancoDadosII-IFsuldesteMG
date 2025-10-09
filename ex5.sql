@@ -50,7 +50,8 @@ INSERT INTO clientes VALUES (null, '03350314905', 'Fernando Soares', '1990-03-05
 
 -- SELECT * FROM clientes;
 
-delete FROM clientes WHERE Cidade = 'Londrina';
+-- https://www.w3schools.com/mysql/mysql_alter.asp
+DELETE FROM clientes WHERE Cidade = 'Londrina';
 
 SELECT * FROM clientes;
 
