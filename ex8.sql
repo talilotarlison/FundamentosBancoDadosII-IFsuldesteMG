@@ -93,3 +93,5 @@ JOIN vendas v ON c.idCliente =v.FK_idCliente;
 SELECT c.nome as nomeCliente, v.dataCompra, p.nome as nomeProduto , p.valor, p.marca
 FROM clientes c
 JOIN vendas v ON c.idCliente =v.FK_idCliente  join produtos p on v.FK_idProduto= p.idCodProduto;
+
+-- https://www.alura.com.br/artigos/mer-e-der-funcoes
