@@ -1,3 +1,6 @@
+-- criar base de dados
+CREATE DATABASE banco_clientes;
+USE banco_clientes;
 -- tabela produtos
 
 -- nome do produto, valor, marca
