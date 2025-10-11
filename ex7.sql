@@ -1,4 +1,6 @@
 -- criar base de dados
+-- https://www.w3schools.com/sql/sql_create_db.asp
+
 CREATE DATABASE banco_clientes;
 USE banco_clientes;
 -- tabela produtos
