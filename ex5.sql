@@ -1,4 +1,8 @@
+-- criar base de dados
+-- https://www.w3schools.com/sql/sql_create_db.asp
 
+CREATE DATABASE banco_clientes;
+USE banco_clientes;
 -- create a table
 --  CPF, Nome, Data de Nascimento, Endereço, CEP, Bairro, Cidade e UF, data da última compra.
 
