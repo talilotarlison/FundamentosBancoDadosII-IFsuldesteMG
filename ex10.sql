@@ -147,5 +147,7 @@ FROM notas;
 -- Maior nota com nome do aluno
 SELECT aluno.nome, notaFinal
 FROM alunos AS aluno
-JOIN notas ON aluno
+JOIN notas ON aluno.id = notas.aluno_id
+WHERE notaFinal = (SELECT MAX(notaFinal) FROM notas);
+
 
