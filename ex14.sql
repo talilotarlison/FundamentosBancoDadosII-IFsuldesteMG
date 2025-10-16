@@ -1,12 +1,15 @@
 -- procedimentos no mysql
--- create
+
+-- https://www.devmedia.com.br/stored-procedures-no-mysql/29030
+
+-- create table
 CREATE TABLE EMPLOYEE (
   empId INTEGER PRIMARY KEY,
   name TEXT NOT NULL,
   dept TEXT NOT NULL
 );
 
--- insert
+-- insert dados
 INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
 INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
 INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
@@ -41,7 +44,7 @@ WHERE empId = indentificador;
 END $$
 DELIMITER ;
 
--- busca
+-- busca dados
 SET @valor = 3;
 CALL Selecionar_Funcionario_ID(@valor);
 SELECT @valor;
@@ -68,11 +71,12 @@ DELIMITER ;
 
 -- DELIMITER: Não houve alterações no uso do DELIMITER para mudar o delimitador do código SQL, o que é necessário quando se cria uma procedure no MySQL.
 
--- busca aqui
+-- busca dados
 SET @nomeFun = "Clark";
 CALL Selecionar_Funcionario_Name(@nomeFun);
 SELECT @nomeFun;
 
+-- busca dados
 CALL Selecionar_Funcionario_Name('Clark');
 
 -- mostra os procedimentos
@@ -80,10 +84,9 @@ SHOW PROCEDURE STATUS;
 
 -- apagar procedimentos
 
--- DROP PROCEDURE Listar_Funcionarios;
+DROP PROCEDURE Listar_Funcionarios;
 
--- DROP PROCEDURE IF EXISTS Listar_Funcionarios;
--- 
--- SHOW PROCEDURE STATUS;
+DROP PROCEDURE IF EXISTS Listar_Funcionarios;
 
--- https://www.devmedia.com.br/stored-procedures-no-mysql/29030
+--  mostra procedimentos existentes
+SHOW PROCEDURE STATUS;
